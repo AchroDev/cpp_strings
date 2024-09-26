@@ -3,10 +3,9 @@
 
 // Strings in C++ are an array of characters
 
-// The parameter used here is actually not a good idea because the whole parameter creates a copy and not a reference
-// This also means you are dynamically allocate on the heap a brand new char array over and over again. ITS SLOW
 // In a read-only function like this, you should use a constant reference
-void PrintString(std::string string)
+// This is correct
+void PrintString(const std::string &string)
 {
     std::cout << string << std::endl;
 }
