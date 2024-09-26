@@ -11,8 +11,8 @@ int main()
     // char name2[8] = {'A', 'c', 'h', 'r', 'o', 'D', 'e', 'v'}; // Manually created a char array (string)
     // std::cout << name << std::endl;
 
-    std::string name = "AchroDev" + " hello!"; // You can't just append/add another string like this as you are essentially trying to add 2 const char arrays
-    name += " hello";                          // This is how you can actually append/add another string to a string
+    std::string name = std::string("AchroDev") + " hello!"; // The other way to easily append is to surround one of the strings with the string constructor.
+                                                            // You may end up with more copies appending to strings like this
     std::cout << name << std::endl;
 
     std::cin.get();
