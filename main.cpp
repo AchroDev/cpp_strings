@@ -11,7 +11,7 @@ int main()
     // char name2[8] = {'A', 'c', 'h', 'r', 'o', 'D', 'e', 'v'}; // Manually created a char array (string)
     // std::cout << name << std::endl;
 
-    std::string name = "AchroDev"; // This is the appropriate way to write a String in C++
+    std::string name = "AchroDev"; // This is the appropriate way to write a String in C++, it is still a const char array
     std::cout << name << std::endl;
 
     std::cin.get();
