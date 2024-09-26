@@ -11,8 +11,8 @@ int main()
     // char name2[8] = {'A', 'c', 'h', 'r', 'o', 'D', 'e', 'v'}; // Manually created a char array (string)
     // std::cout << name << std::endl;
 
-    std::string name = std::string("AchroDev") + " hello!"; // The other way to easily append is to surround one of the strings with the string constructor.
-                                                            // You may end up with more copies appending to strings like this
+    std::string name = std::string("AchroDev") + " hello!";
+    name.find("no") != std::string::npos; // You can search in a string using this .find() and a bool check
     std::cout << name << std::endl;
 
     std::cin.get();
